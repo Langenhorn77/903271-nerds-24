@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юрий Чурсин](https://up.htmlacademy.ru/htmlcss/24/user/903271).
-* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/id23249).
+* Наставник: Ксения Торкова(https://htmlacademy.ru/profile/id23249).
 
 ---
 
