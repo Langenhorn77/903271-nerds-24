@@ -10,7 +10,7 @@
 
 <header>
     <nav>
-        <a href="#" class="header_logo"><img src="/img/general_images/nerds-logo.svg" width="160" height="65" alt="Логотип"/></a>
+        <a href="#" class="header_logo"><img src="img/general_images/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"/></a>
         <ul class="site_navigation">
             <li><a href="index.html">Студия</a></li>
             <li><a href="clients.html">Клиенты</a></li>
@@ -156,6 +156,29 @@
             <a href="tel:+78122757575" class="telephone">тел. +7 (812) 275-75-75</a>
             <a href="#" class="button btn_write">Напишите нам</a>
         </div>
+    </section>
+    
+    <section class="popup">
+    
+        <form class="popup_window" action="https://echo.htmlacademy.ru"
+        method="post">
+            <h2>Напишите нам</h2>
+            <p>
+                <label for="user_login">Ваше имя:</label>
+                <input id="user_login" type="text" name="user_login" placeholder="Имя Фамилия" required>
+            </p>
+    
+            <p>
+                <label for="user_email">Ваш e-mail:</label>
+                <input id="user_email" type="email" name="user_email" placeholder="email@example.com" required>
+            </p>
+    
+            <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+            
+            <button class="button btn_submit" type="submit">ОТПРАВИТЬ</button>
+        </form>
+    
+        
     </section>
 
 
