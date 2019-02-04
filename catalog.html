@@ -36,22 +36,33 @@
         <h2 class="visually_hidden">Фильтр товаров</h2>
         
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-           <fieldset class="by_price">
-               <legend>СТОИМОСТЬ:</legend>
-               
-               <input id="price" type="range" min="0" max="15000" step="1000" value="10000" name="price"/>
-           </fieldset>
+            <fieldset class="by_price">
+                <legend>СТОИМОСТЬ:</legend>
+                
+                <input id="price" type="range" min="0" max="15000" step="1000" value="10000" name="price"/>
+            </fieldset>
             <fieldset class="by_grid">
                 <legend>СЕТКА:</legend>
                 <ul>
                     <li class="filter_option">
-                        <input type="radio" class="visually_hidden by_grid_option" name="grid" value="adaptive"  checked/>Адаптивная
+                        <label>
+                            <input type="radio" class="visually_hidden by_grid_option" name="grid" id="adaptive"
+                                   checked/>Адаптивная
+                        </label>
                     </li>
+                    
+                    
                     <li class="filter_option">
-                        <input type="radio" class="visually_hidden by_grid_option" name="grid" value="fixed"/>Фиксированная
+                        <label>
+                            <input type="radio" class="visually_hidden by_grid_option" name="grid" id="fixed"/>Фиксированная
+                        </label>
                     </li>
+                    
                     <li class="filter_option">
-                        <input type="radio" class="visually_hidden by_grid_option" name="grid" value="rubber"/>Резиновая
+                        <label>
+                            <input type="radio" class="visually_hidden by_grid_option" name="grid" id="rubber"/>Резиновая
+                        </label>
+                    
                     </li>
                 </ul>
             </fieldset>
@@ -59,28 +70,33 @@
                 <legend>ОСОБЕННОСТИ:</legend>
                 <ul>
                     <li class="filter_option">
-                        <input class="visually_hidden by_features_option" type="checkbox" name="slider" checked/>
-                        Слайдер
+                        <input class="visually_hidden by_features_option" type="checkbox" name="slider" id="slider"
+                               checked/>
+                        <label for="slider">Слайдер</label>
                     </li>
                     <li class="filter_option">
-                        <input class="visually_hidden by_features_option" type="checkbox" name="advantage_block"/>
-                        Блок преимуществ
+                        <input class="visually_hidden by_features_option" type="checkbox" name="advantage_block"
+                               id="advantage_block"/>
+                        <label for="advantage_block">Блок преимуществ</label>
                     </li>
                     <li class="filter_option">
-                        <input class="visually_hidden by_features_option" type="checkbox" name="news" checked/>
-                        Новости
+                        <input class="visually_hidden by_features_option" type="checkbox" name="news" id="news"
+                               checked/>
+                        <label for="news">Новости</label>
                     </li>
                     <li class="filter_option">
-                        <input class="visually_hidden by_features_option" type="checkbox" name="gallery"/>
-                        Галерея
+                        <input class="visually_hidden by_features_option" type="checkbox" name="gallery" id="gallery"/>
+                        <label for="gallery">Галерея</label>
                     </li>
                     <li class="filter_option">
-                        <input class="visually_hidden by_features_option" type="checkbox" name="cart"/>
-                        Корзина
+                        <input class="visually_hidden by_features_option" type="checkbox" name="cart" id="cart"/>
+                        <label for="cart">Корзина</label>
                     </li>
                 </ul>
             </fieldset>
             
+            <button type="submit" class="button btn_show">ПОКАЗАТЬ</button>
+        
         </form>
     
     </aside>
@@ -92,7 +108,8 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
             <li class="arrow_up"><a href="#"><img src="img/catalog_images/icon-up-dir.svg" alt="стрелка вверх"></a></li>
-            <li class="arrow_down"><a href="#"><img src="img/catalog_images/icon-down-dir.svg" alt="стрелка вниз"></a></li>
+            <li class="arrow_down"><a href="#"><img src="img/catalog_images/icon-down-dir.svg" alt="стрелка вниз"></a>
+            </li>
         </ul>
     </div>
     
@@ -197,7 +214,11 @@
                 <input id="user_email" type="email" name="user_email" placeholder="email@example.com" required>
             </p>
             
-            <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+            <p>
+                <label for="write_us">Текст письма:</label>
+                <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме"
+                          required></textarea>
+            </p>
             
             <button class="button btn_submit" type="submit">ОТПРАВИТЬ</button>
         </form>
