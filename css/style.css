@@ -1,3 +1,445 @@
 footer img {
     background-color: red;
 }
+
+
+/*ОБЩИЕ СТИЛИ*/
+
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+
+header {
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+header ul {
+    list-style: none;
+}
+
+
+header a {
+    font-weight: 500;
+    color: #000000;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: #fb565a;
+}
+
+header a:active {
+    color: #bdbdbd;
+}
+
+.header_logo:hover {
+    opacity: 0.8;
+}
+
+.header_logo:active {
+    opacity: 0.3;
+}
+
+.visually_hidden {
+    visibility: hidden;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #fb565a;
+
+    border: none;
+    border-radius: 2px;
+
+    display: block;
+    width: 200px;
+    height: 33px;
+    padding-top: 17px;
+}
+
+.button:hover {
+    background-color: #e74246;
+}
+
+.button:active {
+    background-color: #d7373b;
+    color: #e48789;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.friends {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.discount {
+    line-height: 22px;
+}
+
+
+/* INDEX.HTML */
+
+
+/*.slider*/
+
+.slogan {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+
+}
+
+.btn_know {
+    width: 240px;
+
+}
+
+/*.production*/
+
+.our_production {
+    list-style: none;
+}
+
+.our_production h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.btn_order_app {
+    background-color: #00ca74;
+}
+
+.btn_order_app:hover {
+    background-color: #00bc6c;
+}
+
+.btn_order_app:active {
+    background-color: #00aa62;
+    color: #74c69c;
+}
+
+
+.btn_order_present {
+    background-color: #efc84a;
+}
+
+.btn_order_present:hover {
+    background-color: #eab534;
+}
+
+.btn_order_present:active {
+    background-color: #e5a722;
+    color: #edc47f;
+}
+
+/*.about_us*/
+.we_are {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.we_do {
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.development {
+    list-style: none;
+}
+
+.features {
+    list-style: none;
+}
+
+.percent {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.percent_text {
+    line-height: 18px;
+}
+
+/*.partners*/
+
+.partners a {
+    opacity: 0.2;
+}
+
+.partners a:hover {
+    opacity: 1;
+}
+
+.partners a:active {
+    opacity: 0.1;
+}
+
+/*.contacts*/
+
+.contacts a {
+    text-decoration: none;
+}
+
+.contact {
+    background-color: white;
+}
+
+.studio_name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.adress {
+    line-height: 18px;
+}
+
+/*.popup*/
+
+.popup_window h2 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.popup_window label {
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.popup_window input {
+    width: 360px;
+    height: 50px;
+    border: #d7dcde 2px solid;
+    border-radius: 2px;
+}
+
+.popup_window textarea {
+    width: 760px;
+    height: 118px;
+    border: #d7dcde 2px solid;
+    border-radius: 2px;
+
+}
+
+.popup_window input:hover, .popup_window textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.popup_window input:focus, .popup_window textarea:focus {
+    outline-color: black;
+}
+
+
+.btn_submit {
+    width: 260px;
+    height: 50px;
+    padding: 0;
+    border: none;
+}
+
+/*CATALOG.HTML*/
+
+.site_current {
+    border-bottom: #fb565a 2px solid;
+    width: 75px; /*временная мера*/
+}
+
+.container h1 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+/*.filters*/
+
+.filter legend {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter_option label {
+    color: #283136;
+}
+
+.by_grid ul, .by_features ul {
+    list-style: none;
+}
+
+.btn_show {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: black;
+
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 2px;
+
+    width: 260px;
+    height: 50px;
+    padding: 0;
+}
+
+.btn_show:hover {
+    background-color: #dfdfdf;
+}
+
+.btn_show:active {
+    background-color: #d5d5d5;
+    color: #a9a9a9;
+}
+
+/*.sorting*/
+
+.sorting p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sorting a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    opacity: 0.3;
+}
+
+.sorting a:hover {
+    opacity: 0.6;
+}
+
+.sorting a:active {
+    opacity: 1;
+}
+
+.sorting .current_choice {
+    opacity: 1;
+}
+
+/*.goods*/
+
+.card_items {
+    list-style: none;
+}
+.card_item_hover {
+    display: none;
+    width: 360px;
+    height: 231px;
+    background-color: #eeeeee;
+}
+
+.card_item:hover .card_item_hover {
+    display: block;
+}
+
+.card_item_hover a {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.card_item_hover p {
+    line-height: 18px;
+    color: #666666;
+}
+
+.btn_price {
+    height: 50px;
+    padding: 0;
+}
+
+.btn_price:active {
+    color: white;
+}
+
+/*.pages*/
+.pages  {
+    list-style: none;
+}
+
+.pages a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    color: black;
+    background-color: #eeeeee;
+
+    border: none;
+    border-radius: 2px;
+}
+
+.pages a:hover {
+    background-color: #dfdfdf;
+}
+
+.pages a:active {
+    background-color: #d5d5d5;
+    color: #a9a9a9;
+
+}
+
+
+.page_current a, .page a {
+    text-align: center;
+
+    display: block;
+    width: 50px;
+    height: 33px;
+    padding-top: 17px;
+
+}
+
+.page_current a {
+    background-color: white;
+    border: #dbdbdb 3px solid;
+
+    width: 44px;
+    height: 30px;
+    padding-top: 14px;
+}
+
+.next a {
+    text-transform: uppercase;
+
+    display: block;
+    width: 260px;
+    height: 33px;
+    padding-top: 17px;
+    text-align: center;
+}
+

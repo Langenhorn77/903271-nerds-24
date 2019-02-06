@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог студии Нердс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -95,7 +95,7 @@
                 </ul>
             </fieldset>
             
-            <button type="submit" class="button btn_show">ПОКАЗАТЬ</button>
+            <button type="submit" class="btn_show">ПОКАЗАТЬ</button>
         
         </form>
     
@@ -104,12 +104,13 @@
     <div class="sorting">
         <p>СОРТИРОВАТЬ:</p>
         <ul class="sorting_types">
-            <li><a href="#">По цене</a></li>
+            <li><a href="#" class="current_choice">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
-            <li class="arrow_up"><a href="#"><img src="img/catalog_images/icon-up-dir.svg" alt="стрелка вверх"></a></li>
-            <li class="arrow_down"><a href="#"><img src="img/catalog_images/icon-down-dir.svg" alt="стрелка вниз"></a>
+            <li class="arrow_down"><a href="#" class="current_choice"><img src="img/catalog_images/icon-down-dir.svg" alt="стрелка вниз"></a>
             </li>
+            <li class="arrow_up"><a href="#"><img src="img/catalog_images/icon-up-dir.svg" alt="стрелка вверх"></a></li>
+            
         </ul>
     </div>
     
@@ -225,6 +226,7 @@
     
     
     </section>
+    
 </main>
 
 <footer>
