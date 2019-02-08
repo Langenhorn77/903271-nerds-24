@@ -171,13 +171,15 @@ body {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
-    color: #283136;
+    color: #000000;
 }
 
 .we_do {
     font-weight: 700;
     text-transform: uppercase;
-
+}
+.we_like {
+    color: #283136;
 }
 
 .development {
