@@ -16,31 +16,34 @@ body {
 }
 
 
-header {
+.site_header {
     width: 100%;
     background-color: #eeeeee;
 }
 
-header ul {
+.site_header ul {
     list-style: none;
 }
 
 
-header a {
+.site_header a {
     font-weight: 500;
+    line-height: 30px;
     color: #000000;
 
     text-decoration: none;
     text-transform: uppercase;
 }
 
-header a:hover {
+.site_header a:hover, .site_header a:focus {
     color: #fb565a;
 }
 
-header a:active {
-    color: #bdbdbd;
+.site_header a:active {
+    color: rgba(0, 0, 0, 0.3)
 }
+
+
 
 .header_logo:hover {
     opacity: 0.8;
@@ -51,13 +54,20 @@ header a:active {
 }
 
 .visually_hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .button {
     font-size: 16px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -69,7 +79,7 @@ header a:active {
 
     display: block;
     width: 200px;
-    height: 33px;
+    min-height: 33px;
     padding-top: 17px;
 }
 
@@ -79,10 +89,11 @@ header a:active {
 
 .button:active {
     background-color: #d7373b;
-    color: #e48789;
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
 }
 
-footer ul {
+.site_footer ul {
     list-style: none;
 }
 
@@ -94,6 +105,7 @@ footer ul {
 
 .discount {
     line-height: 22px;
+    color: #444444;
 }
 
 
@@ -159,6 +171,7 @@ footer ul {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
+    color: #283136;
 }
 
 .we_do {
@@ -169,6 +182,7 @@ footer ul {
 
 .development {
     list-style: none;
+    color: #283136;
 }
 
 .features {
@@ -182,6 +196,7 @@ footer ul {
 
 .percent_text {
     line-height: 18px;
+    color: #283136;
 }
 
 /*.partners*/
@@ -216,6 +231,11 @@ footer ul {
 
 .adress {
     line-height: 18px;
+    color: #666666;
+}
+
+.telephone {
+    color: #666666;
 }
 
 /*.popup*/
@@ -251,15 +271,17 @@ footer ul {
 }
 
 .popup_window input:focus, .popup_window textarea:focus {
-    outline-color: black;
+    border-color: #000000;
+    outline: none;
 }
 
 
 .btn_submit {
     width: 260px;
-    height: 50px;
+    min-height: 50px;
     padding: 0;
     border: none;
+
 }
 
 /*CATALOG.HTML*/
@@ -269,7 +291,7 @@ footer ul {
     width: 75px; /*временная мера*/
 }
 
-.container h1 {
+.catalog h1 {
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
@@ -285,6 +307,7 @@ footer ul {
 }
 
 .filter_option label {
+    line-height: 20px;
     color: #283136;
 }
 
@@ -313,7 +336,8 @@ footer ul {
 
 .btn_show:active {
     background-color: #d5d5d5;
-    color: #a9a9a9;
+    color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
 }
 
 /*.sorting*/
@@ -409,8 +433,7 @@ footer ul {
 
 .pages a:active {
     background-color: #d5d5d5;
-    color: #a9a9a9;
-
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -421,7 +444,6 @@ footer ul {
     width: 50px;
     height: 33px;
     padding-top: 17px;
-
 }
 
 .page_current a {
