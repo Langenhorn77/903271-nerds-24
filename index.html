@@ -33,13 +33,19 @@
     
     <section class="slider">
         <h2 class="visually_hidden">Девиз студии</h2>
-        <div class="slider_controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
-        </div>
+        <ul class="slider_controls">
+            <li class="slider_control control_1 active">
+                <button></button>
+            </li>
+            <li class="slider_control  control_2">
+                <button></button>
+            </li>
+            <li class="slider_control control_3">
+                <button></button>
+            </li>
+        </ul>
         
-        <div class="slide slide_1">
+        <div class="slide slide_1 slide_active">
                 <p class="slogan">Долго, дорого,<br>
                     скрупулезно.</p>
                 <p class="explanation">Математически выверенный дизайн<br>
@@ -151,16 +157,17 @@
         <section class="partners">
             <h2 class="visually_hidden">Наши партнеры</h2>
             
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/index_images/html_academy_logo.png"
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="partner_logo"><img src="img/index_images/html_academy_logo.png"
                                                                     width="199" height="68" alt="HTML Academy"/></a>
-            <a href="#"><img src="img/index_images/borodinski_logo.png" width="209" height="90" alt="Borodinski"/></a>
-            <a href="#"><img src="img/index_images/pink_logo.png" width="185" height="52" alt="Pink"/></a>
-            <a href="#"><img src="img/index_images/mishka_logo.png" width="173" height="84" alt="Mishka"></a>
+            <a href="#" class="partner_logo"><img src="img/index_images/borodinski_logo.png" width="209" height="90" alt="Borodinski"/></a>
+            <a href="#" class="partner_logo"><img src="img/index_images/pink_logo.png" width="185" height="52" alt="Pink"/></a>
+            <a href="#" class="partner_logo"><img src="img/index_images/mishka_logo.png" width="173" height="84" alt="Mishka"></a>
         </section>
     </div>
     
     <section class="contacts">
         <h2 class="visually_hidden">Контактная информация</h2>
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCUKR0Jl" width="1440" height="416" frameborder="1" allowfullscreen="true"></iframe>-->
         <img src="img/general_images/map.png" width="1440" height="416" alt="Карта проезда">
         <div class="contact">
             <p class="studio_name">NЁRDS DESIGN STUDIO</p>
@@ -199,20 +206,19 @@
           method="post">
         <h2>Напишите нам</h2>
         <div class="user_input">
-            <p>
+            <p class="login">
                 <label for="user_login">Ваше имя:</label>
-                <input id="user_login" type="text" name="user_login" placeholder="Имя Фамилия" required>
+                <input id="user_login" type="text" name="user_login" placeholder="Имя Фамилия">
             </p>
             
-            <p>
+            <p class="mail">
                 <label for="user_email">Ваш e-mail:</label>
-                <input id="user_email" type="email" name="user_email" placeholder="email@example.com" required>
+                <input id="user_email" type="email" name="user_email" placeholder="email@example.com">
             </p>
             
             <p>
                 <label for="write_us">Текст письма:</label>
-                <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме"
-                          required></textarea>
+                <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </p>
         </div>
         
@@ -223,5 +229,6 @@
 
 </section>
 
+<script src="js/script.js"></script>
 </body>
 </html>
