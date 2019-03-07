@@ -5,7 +5,7 @@
     <title>Каталог студии Нердс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
 
 
 </head>
@@ -68,24 +68,27 @@
                         <legend>СЕТКА:</legend>
                         <ul>
                             <li class="filter_option">
-                                <label class="by_grid_option">
+                                <label>
                                     <input type="radio" class="visually_hidden" name="grid" id="adaptive"
                                            checked/>
-                                    <span class="radio_indicator"></span>Адаптивная
+                                    <span class="radio_indicator"></span>
+                                    Адаптивная
                                 </label>
                             </li>
                             
                             <li class="filter_option">
-                                <label class="by_grid_option">
-                                    <input type="radio" class="visually_hidden" name="grid" id="fixed"/>
-                                    <span class="radio_indicator"></span>Фиксированная
+                                <label>
+                                    <input type="radio" class="visually_hidden" name="grid" id="fixed" disabled/>
+                                    <span class="radio_indicator"></span>
+                                    Фиксированная
                                 </label>
                             </li>
                             
                             <li class="filter_option">
-                                <label class="by_grid_option">
+                                <label>
                                     <input type="radio" class="visually_hidden" name="grid" id="rubber"/>
-                                    <span class="radio_indicator"></span>Резиновая
+                                    <span class="radio_indicator"></span>
+                                    Резиновая
                                 </label>
                             
                             </li>
@@ -96,37 +99,42 @@
                         <ul>
                             
                             <li class="filter_option">
-                                <label class="by_features_option">
+                                <label>
                                     <input class="visually_hidden" type="checkbox" name="slider" checked/>
-                                    <span class="checkbox_indicator"></span>Слайдер
+                                    <span class="checkbox_indicator"></span>
+                                    Слайдер
                                 </label>
                             </li>
                             
                             <li class="filter_option">
-                                <label class="by_features_option">
+                                <label>
                                     <input class="visually_hidden" type="checkbox" name="slider"/>
-                                    <span class="checkbox_indicator"></span>Блок преимуществ
+                                    <span class="checkbox_indicator"></span>
+                                    Блок преимуществ
                                 </label>
                             </li>
                             
                             <li class="filter_option">
-                                <label class="by_features_option">
+                                <label>
                                     <input class="visually_hidden" type="checkbox" name="slider" checked/>
-                                    <span class="checkbox_indicator"></span>Новости
+                                    <span class="checkbox_indicator"></span>
+                                    Новости
                                 </label>
                             </li>
                             
                             <li class="filter_option">
-                                <label class="by_features_option">
+                                <label>
                                     <input class="visually_hidden" type="checkbox" name="slider"/>
-                                    <span class="checkbox_indicator"></span>Галерея
+                                    <span class="checkbox_indicator"></span>
+                                    Галерея
                                 </label>
                             </li>
                             
                             <li class="filter_option">
-                                <label class="by_features_option">
-                                    <input class="visually_hidden" type="checkbox" name="slider"/>
-                                    <span class="checkbox_indicator"></span>Корзина
+                                <label>
+                                  <input class="visually_hidden" type="checkbox" name="slider"/>
+                                  <span class="checkbox_indicator"></span>
+                                    Корзина
                                 </label>
                             </li>
                         </ul>
@@ -149,9 +157,10 @@
                         </ul>
                         <ul class="arrows">
                             <li class="arrow_down"><a href="#" class="current_choice"><img
-                                    src="img/catalog_images/icon-down-dir.svg"
+                                    src="img/catalog_images/icon-down-dir.svg" width="11" height="10"
                                     alt="стрелка вниз"></a></li>
-                            <li class="arrow_up"><a href="#"><img src="img/catalog_images/icon-up-dir.svg"
+                            <li class="arrow_up"><a href="#"><img src="img/catalog_images/icon-up-dir.svg" width="11"
+                                                                  height="10"
                                                                   alt="стрелка вверх"></a>
                             </li>
                         </ul>
@@ -244,8 +253,8 @@
             <p class="adress">191186, Санкт-Петербург,
                 ул. Б. Конюшенная, д. 19/8</p>
             <a href="tel:+78122757575" class="telephone">тел. +7 (812) 275-75-75</a>
-            <a href="#" class="button btn_write">Напишите нам</a>
-            
+            <a href="writeus.html" class="button btn_write">Напишите нам</a>
+        
         </div>
     </section>
 </main>
@@ -298,6 +307,6 @@
 </section>
 
 
-<script src="js/script.js"></script>
+<script src="js/script-min.js"></script>
 </body>
 </html>
