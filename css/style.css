@@ -126,7 +126,7 @@ body {
     margin-right: auto;
 }
 
-.contacts::before {
+/*.contacts::before {
     content: "";
     position: absolute;
     top: 169px;
@@ -139,7 +139,7 @@ body {
     background-position: 0 0;
     z-index: 2;
 }
-
+*/
 
 .contacts a {
     text-decoration: none;
@@ -450,17 +450,35 @@ body {
     border: none;
     margin-top: 15px;
 }
-
+@keyframes popup_rise {
+    0% {transform: translateY(2000px);}
+    70% {transform: translateY(-30px);}
+    90% {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+    
+}
 .popup_show {
     display: block;
+    animation-name: popup_rise;
+    animation-duration: 1s;
 }
 
 .popup_error_login {
     border-color: #e74246;
 }
-
+@keyframes shake {
+    0%, 100% {transform: translateX(0)translateY(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-20px)translateY(-20px);}
+    20%, 40%, 60%, 80% {transform: translateX(20px)translateY(20px);}
+    
+}
+.popup_wrong {
+    animation-name: shake;
+    animation-duration: 1s;
+}
 .popup_error input {
     border-color: #e74246;
+
 }
 
 /* INDEX.HTML */
@@ -643,7 +661,7 @@ body {
 
 .production {
     min-height: 347px;
-    padding: 80px 0 65px 0;
+    padding: 80px 0 0 0;
 
     border-bottom: #eeeeee 2px solid;
 }
@@ -662,9 +680,10 @@ body {
 .our_production li {
     width: 300px;
     margin-right: 100px;
+    margin-bottom: 65px;
 }
 
-.our_production li:last-child {
+.our_production li:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -1095,7 +1114,7 @@ body {
     margin-bottom: 20px;
 }
 
-.filter_option input[type="radio"] + .radio_indicator {
+.grid + label .radio_indicator {
     position: absolute;
     top: -2px;
     left: -25px;
@@ -1105,7 +1124,7 @@ body {
     opacity: 0.4;
 }
 
-.filter_option input[type="radio"]:checked + .radio_indicator {
+.grid:checked + label .radio_indicator {
     position: absolute;
     top: -2px;
     left: -25px;
@@ -1115,32 +1134,30 @@ body {
     opacity: 0.4;
 }
 
-.filter_option input[type="radio"]:hover + .radio_indicator {
+.grid:hover + label  .radio_indicator {
     opacity: 1;
 }
 
-.filter_option input[type="radio"]:disabled + .radio_indicator {
+.grid:disabled + label  .radio_indicator {
     opacity: 0.1;
 }
 
-.filter_option input[type="radio"]:focus + .radio_indicator {
+.grid:focus + label  .radio_indicator {
     outline: #71b9ff 5px auto; /*цвет outline выбрал случайный*/
 }
 
-.filter_option input[type="radio"]:disabled + label {
+.grid:disabled + label {
     color: rgba(40, 49, 54, 0.3);
 }
 
-.filter_option label + input[type="radio"]:disabled {
-    color: rgba(40, 49, 54, 0.3);
-}
+
 /*</radiobutton>*/
 
 
 /*<checkbox>*/
 
 
-.filter_option input[type="checkbox"] + .checkbox_indicator {
+.feature + label .checkbox_indicator {
     position: absolute;
     top: 0;
     left: -25px;
@@ -1151,7 +1168,7 @@ body {
 
 }
 
-.filter_option input[type="checkbox"]:checked + .checkbox_indicator {
+.feature:checked + label .checkbox_indicator {
     position: absolute;
     top: 0;
     left: -25px;
@@ -1162,23 +1179,25 @@ body {
 
 }
 
-.filter_option input[type="checkbox"]:hover + .checkbox_indicator {
+.feature:hover + label .checkbox_indicator {
     opacity: 1;
 }
 
-.filter input[type="checkbox"]:disabled + .checkbox_indicator {
+.feature:disabled + label .checkbox_indicator {
     opacity: 0.1;
 }
 
 
-.filter_option input[type="checkbox"]:focus + .checkbox_indicator {
+.feature:focus + label .checkbox_indicator {
     outline: #71b9ff 5px auto; /*цвет outline выбрал случайный*/
 }
 
 
-.filter_option input[type="checkbox"]:disabled + .checkbox_indicator + label {
+.feature:disabled + label {
     color: rgba(40, 49, 54, 0.3);
 }
+
+
 
 /*</checkbox>*/
 

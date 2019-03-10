@@ -23,34 +23,6 @@ if (slide_show) {
      var slide_3 = slide_show.querySelector(".slide_3");
 
 
-/*
-    var use_control = [{control: {}, slide: {}, ind: 0}, {control: {}, slide: {}, ind: 1}, {
-        control: {},
-        slide: {},
-        ind: 2
-    }];
-
-    for (var i = 0; i < 3; i++) {
-        use_control[i].control = control.querySelector(".control_" + (i + 1).toString());
-        use_control[i].slide = slide_show.querySelector(".slide_" + (i + 1).toString());
-    }
-    for (var j = 0; j < 3; j++) {
-        use_control[j].control.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            for (var i = 0; i < 3; i++) {
-                if (use_control[i].ind === i) {
-                    add_active(use_control[i].control, "active");
-                    add_active(use_control[i].slide, "slide_active");
-                } else {
-                    remove_active(use_control[i].control, "active");
-                    remove_active(use_control[i].slide, "slide_active");
-                }
-            }
-        })
-    }
-}
-*/
-
     use_control_1.addEventListener("click", function (evt) {
         evt.preventDefault();
         use_control_1.classList.add("active");
@@ -99,10 +71,12 @@ popup.addEventListener("submit", function (evt) {
         evt.preventDefault();
         console.log("Заполните все поля!");
         login.classList.add("popup_error");
+        popup.classList.add("popup_wrong");
     } else if (!user_mail.value) {
         evt.preventDefault();
         console.log("Заполните все поля!");
         mail.classList.add("popup_error");
+        popup.classList.add("popup_wrong");
     }
 });
 
@@ -117,12 +91,3 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-/*
-function add_active(a, s) {
-    a.classList.add(s);
-}
-
-
-function remove_active(a, s) {
-    a.classList.remove(s);
-}*/
