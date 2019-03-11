@@ -119,14 +119,30 @@ body {
     position: relative;
 }
 
+.contacts iframe {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    position: relative;
+    z-index: 5;
+}
+
 .contacts img {
     width: 100%;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    z-index: 0;
 }
 
-/*.contacts::before {
+
+
+.contacts::before {
     content: "";
     position: absolute;
     top: 169px;
@@ -139,7 +155,7 @@ body {
     background-position: 0 0;
     z-index: 2;
 }
-*/
+
 
 .contacts a {
     text-decoration: none;
@@ -153,6 +169,7 @@ body {
     position: absolute;
     top: 134px;
     left: 141px;
+    z-index: 7;
 }
 
 .studio_name {
