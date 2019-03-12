@@ -8,77 +8,71 @@
     <link rel="stylesheet" href="css/style-min.css">
 
 </head>
+
 <body>
 
-<div class="header_container">
-    <header class="site_header">
-        <nav>
-            <a href="#" class="header_logo"><img src="img/general_images/nerds-logo.svg" width="160" height="65"
-                                                 alt="Логотип дизайн-студии Нёрдс"/></a>
-            <ul class="site_navigation">
-                <li><a href="index.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+<header>
+    <div class="header_container">
+        <div class="site_header container">
+            <nav>
+                <a href="#" class="header_logo"><img src="img/general_images/nerds-logo.svg" width="160" height="65"
+                                                     alt="Логотип дизайн-студии Нёрдс"/></a>
+                <ul class="site_navigation">
+                    <li><a href="index.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                
+                <ul class="cart">
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section class="slider">
+            <h2 class="visually_hidden">Девиз студии</h2>
+            <ul class="slider_controls">
+                <li class="slider_control control_1 active">
+                    <button type="button" aria-label="Переключение слайдера, первый слайд"></button>
+                </li>
+                <li class="slider_control  control_2">
+                    <button type="button" aria-label="Переключение слайдера, второй слайд"></button>
+                </li>
+                <li class="slider_control control_3">
+                    <button type="button" aria-label="Переключение слайдера, третий слайд"></button>
+                </li>
             </ul>
             
-            <ul class="cart">
-                <li><a href="#">Корзина</a></li>
-            </ul>
-        
-        </nav>
-    
-    
-    </header>
-    
-    <section class="slider">
-        <h2 class="visually_hidden">Девиз студии</h2>
-        <ul class="slider_controls">
-            <li class="slider_control control_1 active">
-                <button type="button" aria-label="Переключение слайдера, первый слайд"></button>
-            </li>
-            <li class="slider_control  control_2">
-                <button type="button" aria-label="Переключение слайдера, второй слайд"></button>
-            </li>
-            <li class="slider_control control_3">
-                <button type="button" aria-label="Переключение слайдера, третий слайд"></button>
-            </li>
-        </ul>
-        
-        <div class="slide slide_1 slide_active">
+            <div class="slide slide_1 slide_active">
                 <p class="slogan">Долго, дорого,<br>
                     скрупулезно.</p>
                 <p class="explanation">Математически выверенный дизайн<br>
                     для вашего сайта или мобильного приложения.</p>
                 <a href="#" class="button btn_know">УЗНАТЬ БОЛЬШЕ</a>
-        </div>
-        
-        
-        <div class="slide slide_2">
-            <p class="slogan">Любим математику<br>
-                как никто другой</p>
-            <p class="explanation">Никакого креатива, только математические формулы<br>
-                для расчета идеальных пропорций.</p>
-            <a href="#" class="button btn_know">УЗНАТЬ БОЛЬШЕ</a>
-        </div>
-       
-        <div class="slide slide_3">
-            <p class="slogan">Только ночь,<br>
-                только хардкор</p>
-            <p class="explanation">Работать днем, как все? Мы против этого.<br>
-                Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="button btn_know">УЗНАТЬ БОЛЬШЕ</a>
-        </div>
-    
-    </section>
-</div>
-
-
+            </div>
+            
+            <div class="slide slide_2">
+                <p class="slogan">Любим математику<br>
+                    как никто другой</p>
+                <p class="explanation">Никакого креатива, только математические формулы<br>
+                    для расчета идеальных пропорций.</p>
+                <a href="#" class="button btn_know">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+            
+            <div class="slide slide_3">
+                <p class="slogan">Только ночь,<br>
+                    только хардкор</p>
+                <p class="explanation">Работать днем, как все? Мы против этого.<br>
+                    Ближе к полуночи работа только начинается.</p>
+                <a href="#" class="button btn_know">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+        </section>
+    </div>
+</header>
 
 <main>
-    
-    
-    <div class="main_container">
+    <div class="container">
         <h1 class="visually_hidden">Дизайн-студия "Nerds"</h1>
         
         <section class="production">
@@ -109,9 +103,7 @@
                         насколько вы изумительны!</p>
                     <a href="#" class="button btn_order_present">Заказать</a>
                 </li>
-                
             </ul>
-        
         </section>
         
         <section class="about_us">
@@ -120,7 +112,6 @@
             <div class="about_us_left">
                 <p class="we_are">Мы — маленькая, но гордая
                     дизайн-студия из Краснодара.</p>
-                
                 <p class="we_like">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                     превыше креатива. Работаем не покладая рук, как роботы.</p>
                 <p class="we_do">Выполняем заказы на разработку:</p>
@@ -139,13 +130,11 @@
                         <p class="percent">146<sup>%</sup></p>
                         <p class="percent_text">Уровень самоотдачи</p>
                     </li>
-                    
                     <li>
                         <p class="percent">100<sup>%</sup></p>
                         <p class="percent_text">Соблюдение
                             сроков</p>
                     </li>
-                    
                     <li>
                         <p class="percent">50<sup>%</sup></p>
                         <p class="percent_text">Минимальная
@@ -158,78 +147,79 @@
         <section class="partners">
             <h2 class="visually_hidden">Наши партнеры</h2>
             
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="partner_logo"><img src="img/index_images/html_academy_logo.png"
-                                                                    width="199" height="68" alt="HTML Academy"/></a>
-            <a href="#" class="partner_logo"><img src="img/index_images/borodinski_logo.png" width="209" height="90" alt="Borodinski"/></a>
-            <a href="#" class="partner_logo"><img src="img/index_images/pink_logo.png" width="185" height="52" alt="Pink"/></a>
-            <a href="#" class="partner_logo"><img src="img/index_images/mishka_logo.png" width="173" height="84" alt="Mishka"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="partner_logo"><img
+                    src="img/index_images/html_academy_logo.png"
+                    width="199" height="68" alt="HTML Academy"/></a>
+            <a href="#" class="partner_logo"><img src="img/index_images/borodinski_logo.png" width="209" height="90"
+                                                  alt="Borodinski"/></a>
+            <a href="#" class="partner_logo"><img src="img/index_images/pink_logo.png" width="185" height="52"
+                                                  alt="Pink"/></a>
+            <a href="#" class="partner_logo"><img src="img/index_images/mishka_logo.png" width="173" height="84"
+                                                  alt="Mishka"></a>
         </section>
     </div>
     
     <section class="contacts">
         <h2 class="visually_hidden">Контактная информация</h2>
-         <iframe src="https://yandex.ru/map-widget/v1/-/CCUKR0Jl" width="1440" height="416" allowfullscreen></iframe>
-         <img src="img/general_images/map.png" width="1440" height="416" alt="Карта проезда">
-         <div class="contact">
-             <p class="studio_name">NЁRDS DESIGN STUDIO</p>
-             <p class="adress">191186, Санкт-Петербург,
-                 ул. Б. Конюшенная, д. 19/8</p>
-             <a href="tel:+78122757575" class="telephone">тел. +7 (812) 275-75-75</a>
-             <a href="writeus.html" class="button btn_write">Напишите нам</a>
-         </div>
-     </section>
- </main>
- 
- 
- 
- 
- <div class="footer_container">
-     <footer class="site_footer">
-         <ul class="social">
-             <li><a class="social_btn" href="#"><img src="img/general_images/vk-icon.svg" width="26" height="15"
-                                                     alt="Вконтакте"></a></li>
-             <li><a class="social_btn" href="#"><img src="img/general_images/fb-icon.svg" width="12" height="22"
-                                                     alt="Facebook"></a></li>
-             <li><a class="social_btn" href="#"><img src="img/general_images/insta-icon.svg" width="21" height="21"
-                                                     alt="Instagram"></a></li>
-         </ul>
-         
-         <div class="footer_wrapper">
-             <p class="friends">Давайте дружить, это выгодно!</p>
-             <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-         </div>
-     </footer>
- </div>
- 
- <section class="popup">
-     
-     <form class="popup_window" action="https://echo.htmlacademy.ru"
-           method="post">
-         <h2>Напишите нам</h2>
-         <div class="user_input">
-             <p class="login">
-                 <label for="user_login">Ваше имя:</label>
-                 <input id="user_login" type="text" name="user_login" placeholder="Имя Фамилия">
-             </p>
-             
-             <p class="mail">
-                 <label for="user_email">Ваш e-mail:</label>
-                 <input id="user_email" type="email" name="user_email" placeholder="email@example.com">
-             </p>
-             
-             <p>
-                 <label for="write_us">Текст письма:</label>
-                 <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-             </p>
-         </div>
-         
-         <button class="button btn_submit" type="submit">ОТПРАВИТЬ</button>
-         <button class="popup_close" type="button">Закрыть</button>
-     </form>
- 
- 
- </section>
- 
- <script src="js/script-min.js"></script>
- </body>
- </html>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUKR0Jl" width="1440" height="416" allowfullscreen></iframe>
+        <img src="img/general_images/map.png" width="1440" height="416" alt="Карта проезда">
+        <div class="contact">
+            <p class="studio_name">NЁRDS DESIGN STUDIO</p>
+            <p class="adress">191186, Санкт-Петербург,
+                ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78122757575" class="telephone">тел. +7 (812) 275-75-75</a>
+            <a href="writeus.html" class="button btn_write">Напишите нам</a>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="site_footer container">
+        <ul class="social">
+            <li><a class="social_btn" href="#" aria-label="Мы во Вконтакте"><img src="img/general_images/vk-icon.svg"
+                                                                                 width="26" height="15"
+                                                                                 alt="Вконтакте"></a></li>
+            <li><a class="social_btn" href="#" aria-label="Мы в Facebook"><img src="img/general_images/fb-icon.svg"
+                                                                               width="12" height="22"
+                                                                               alt="Facebook"></a></li>
+            <li><a class="social_btn" href="#" aria-label="Мы в Instagram"><img src="img/general_images/insta-icon.svg"
+                                                                                width="21" height="21"
+                                                                                alt="Instagram"></a></li>
+        </ul>
+        
+        <div class="footer_wrapper">
+            <p class="friends">Давайте дружить, это выгодно!</p>
+            <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </div>
+</footer>
+
+<section class="popup">
+    
+    <form class="popup_window" action="https://echo.htmlacademy.ru"
+          method="post">
+        <h2>Напишите нам</h2>
+        <div class="user_input">
+            <p class="login">
+                <label for="user_login">Ваше имя:</label>
+                <input id="user_login" type="text" name="user_login" placeholder="Имя Фамилия">
+            </p>
+            <p class="mail">
+                <label for="user_email">Ваш e-mail:</label>
+                <input id="user_email" type="email" name="user_email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="write_us">Текст письма:</label>
+                <textarea name="write_us" id="write_us" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </p>
+        </div>
+        
+        <button class="button btn_submit" type="submit">ОТПРАВИТЬ</button>
+        <button class="popup_close" type="button">Закрыть</button>
+    </form>
+</section>
+
+<script src="js/script-min.js"></script>
+</body>
+</html>

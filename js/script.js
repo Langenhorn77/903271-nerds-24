@@ -14,13 +14,13 @@ var slide_show = document.querySelector(".slider");
 
 if (slide_show) {
 
-     var use_control_1 = control.querySelector(".control_1");
-     var use_control_2 = control.querySelector(".control_2");
-     var use_control_3 = control.querySelector(".control_3");
+    var use_control_1 = control.querySelector(".control_1");
+    var use_control_2 = control.querySelector(".control_2");
+    var use_control_3 = control.querySelector(".control_3");
 
-     var slide_1 = slide_show.querySelector(".slide_1");
-     var slide_2 = slide_show.querySelector(".slide_2");
-     var slide_3 = slide_show.querySelector(".slide_3");
+    var slide_1 = slide_show.querySelector(".slide_1");
+    var slide_2 = slide_show.querySelector(".slide_2");
+    var slide_3 = slide_show.querySelector(".slide_3");
 
 
     use_control_1.addEventListener("click", function (evt) {
