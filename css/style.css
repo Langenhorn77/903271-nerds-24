@@ -1043,7 +1043,7 @@ body {
     color: #283136;
 }
 
-/*ползунок*/
+/*range*/
 .filter_range {
     width: 260px;
     margin-top: 49px;
@@ -1411,8 +1411,8 @@ body {
 }
 
 .card_item:hover {
-    -webkit-box-shadow: 0 6px 15px 0px rgba(0, 1, 1, 0.25);
-    box-shadow: 0 6px 15px 0px rgba(0, 1, 1, 0.25);
+    -webkit-box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
 .card_item:hover::before {
